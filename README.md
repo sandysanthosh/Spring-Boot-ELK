@@ -4,7 +4,7 @@
 #### how you can add ELK stack (Elasticsearch, Logstash, and Kibana) in a Spring Boot application to monitor production logs::
 
 
-* Add the following dependencies in your pom.xml file:
+* Add the following dependencies in your **pom.xml** file:
 
 ```
 
@@ -25,7 +25,7 @@
 
 ```
 
-* Create a logstash.conf file in the resources folder of your project. This file will be used to configure Logstash to listen for log events from your application:
+* Create a **logstash.conf** file in the **resources** folder of your project. This file will be used to configure Logstash to listen for log events from your application:
 
 
 ```
@@ -47,7 +47,7 @@ output {
 
 ```
 
-* Create a logback-spring.xml file in the resources folder of your project. This file will be used to configure logback to send log events to Logstash:
+* Create a **logback-spring.xml** file in the **resources** folder of your project. This file will be used to configure logback to send log events to Logstash:
 
 ```
 
@@ -86,7 +86,7 @@ output {
 ```
 
 
-* Create a docker-compose.yml file in the root of your project. This file will be used to define the services that make up your application, including Elasticsearch, Logstash, and Kibana:
+* Create a **docker-compose.yml** file in the root of your project. This file will be used to define the services that make up your application, including Elasticsearch, Logstash, and Kibana:
 
 
 ```
